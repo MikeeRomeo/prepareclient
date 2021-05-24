@@ -42,7 +42,6 @@
 
 <script>
 import * as io from 'socket.io-client';
-import PlayerSingle from './PlayerSingle.vue';
 import Taskbar from './game/Taskbar';
 import InteractiveMap from './game/InteractiveMap';
 import PatientDoc from "@/components/game/PatientDoc";
@@ -137,7 +136,6 @@ export default {
     components: {
         DoctorOverview,
         PopUpContentWrapper,
-        PlayerSingle,
         Taskbar,
         InteractiveMap,
         PatientDoc,
