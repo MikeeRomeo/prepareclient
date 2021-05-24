@@ -1,0 +1,59 @@
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .15s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all .25s ease-in-out;
+}
+
+.slide-fade-enter, .slide-fade-leave-to
+  /* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(15px) scale(0.99);
+  opacity: 0;
+}
+
+@keyframes popUp {
+  0%   { opacity: 0; transform: scale(0.9)}
+  60% { transform: scale(1.05)}
+  100% { opacity: 1; transform: scale(1)}
+}
+
+.popUp-enter-active {
+  animation: popUp .3s;
+}
+.popUp-leave-active {
+  animation: popUp .3s reverse;
+}
+
+@keyframes popUp2 {
+  0%   { opacity: 0; transform: scale(0.9) translate(-50%, -50%)}
+  60% { transform: scale(1.05) translate(-50%, -50%)}
+  100% { opacity: 1; transform: scale(1) translate(-50%, -50%)}
+}
+
+.popUp2-enter-active {
+  animation: popUp2 .3s;
+}
+.popUp2-leave-active {
+  animation: popUp2 .3s reverse;
+}
+
+
+
+
+.list-item {
+  display: inline-block;
+  margin-right: 10px;
+}
+.list-enter-active, .list-leave-active {
+  transition: all .4s;
+}
+.list-enter, .list-leave-to /* .list-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(20px);
+}
